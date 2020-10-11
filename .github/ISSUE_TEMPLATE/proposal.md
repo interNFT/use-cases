@@ -7,22 +7,31 @@ assignees: ''
 
 ---
 
-### Summary
+## Summary
 (One Paragraph)
-### Motivation
+## Motivation
 
-### Requirements (as applicable):
+## Requirements (as applicable):
 User requirements
 *
 Business Requirements
 *
 Technical Requirements
 *
-### Recommendation
+## Recommendation
 #<1> Reference an RFC Pull Request, or related issue/s, if applicable 
 
-### Alternative considerations
+## Alternative considerations
 
-### Outstanding questions & issues
+## Outstanding questions & issues
 1. 
-### Contributors
+## Contributors
+
+
+---
+## For Admin Use
+
+ - [ ] Not duplicate issue
+ - [ ] Appropriate labels applied
+- [ ]  Appropriate contributors tagged
+- [ ]  Contributor assigned/self-assigned
