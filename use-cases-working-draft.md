@@ -296,7 +296,7 @@ The requirements for Interchain NFTs include that these should be:
 5. **Non-transferable** to not permit changes in ownership.
 6. **Lockable** to conditionally stop changes in the token metadata.
 7. **Immutable** to never permit changes in the token metadata.
-8. **Mutable** to unconditionally permit changes in the token metadata.
+8. **Mutable** to conditionally permit changes in the token metadata.
 9. **Re-fungible** to mint fungible tokens which represent interchangeable units of information.
 10. **Divisible** to allow fractional ownership of non-fungible parts.
 11. **Composible** to be owned by another non-fungible token and added to that token’s set or to produce other novel combinatorial forms.
