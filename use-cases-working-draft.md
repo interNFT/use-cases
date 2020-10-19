@@ -144,7 +144,7 @@ Together, these standards will unlock the potential for NFTs and their metadata 
 
 #### NFTs
 
-[KryptoKitties](https://www.cryptokitties.co/) is the first widely-known example of Non-Fungible Tokens. When this launched in November 2017, it introduced a mechanism for creating and owning unique digital resources that people desire as collectibles. This was based on a technical specification \([ERC-712](https://github.com/ethereum/EIPs/issues/721)\) for the minimum interface that a smart contract on the Ethereum network must implement to allow unique tokens to be created, managed, owned, and traded. This specification does not mandate a standard for token metadata or restrict adding supplemental functions.
+[CryptoKitties](https://www.cryptokitties.co/) is the first widely-known example of Non-Fungible Tokens. When this launched in November 2017, it introduced a mechanism for creating and owning unique digital resources that people desire as collectibles. This was based on a technical specification \([ERC-712](https://github.com/ethereum/EIPs/issues/721)\) for the minimum interface that a smart contract on the Ethereum network must implement to allow unique tokens to be created, managed, owned, and traded. This specification does not mandate a standard for token metadata or restrict adding supplemental functions.
 
 Subsequently a number of new ethereum network specifications have been proposed to add supplemental functions and enhancements to the ERC-712 standard. These include methods for combining fungible and non-fungible tokens in multi-token transactions \([ERC-1155](https://github.com/ethereum/EIPs/issues/1155)\), to delegate ownership and control \([ERC-994](https://github.com/ethereum/EIPs/issues/994)\), compose NFTs into hierarchical ownership schemes \([ERC-998](https://github.com/ethereum/EIPs/issues/998)\), for fractional ownership of NFTs \([ERC-1633](https://github.com/ethereum/EIPs/pull/1633)\) and other innovations.
 
@@ -215,7 +215,7 @@ Examples: [IrisNet](https://www.irisnet.org/), [Decentraland](https://decentrala
 
 ### 2.5 Art Tokens
 
-Art Tokens contain the rights to a registered patent or copyright material. These rights may be protected by intellectual property laws.
+Art Tokens contain the rights to a registered patent or copyright material or function as the certificate of authenticity and/or certificate of ownership. These rights may be protected by intellectual property laws.
 
 Art Token metadata describes the art, which may be patented or copyright physical or virtual materials, together with associated licenses and claims.
 
