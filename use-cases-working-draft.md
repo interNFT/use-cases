@@ -12,7 +12,7 @@ By developing Interchain Standards for NFTs and Metadata, we intend to make NFTs
 
 Interchain NFTs and Metadata should have features which will directly benefit users, promote the adoption of decentralised web standards and offer new economic mechanisms for sustainable digital finance and the impact economy.
 
-By presenting a set of canonical use-cases and user stories, this document starts to describe the defining features of Interchain NFTs and Metadata, and why these are beneficial, 
+By presenting a set of canonical use-cases and user stories, this document starts to describe the defining features of Interchain NFTs and Metadata, and why these are beneficial. 
 
 This document is intended to support the InterNFT Working Group to identify technical requirements for developing an interface standard for Interchain NFTs and an Interchain Metadata Standard for NFT referent resources. Recommendations in these standards should be sense-checked against these use-cases and requirements.
 
@@ -60,7 +60,7 @@ The use case model and specific examples described here are not intended to be e
 | Verification | Evaluation of a claim to determine if it is valid, authentic, conforms to a required standard specification, and satisfies a defined cryptographic proof method |
 | Verifiable Claim | An assertion about a subject, made by an identified entity who can be authenticated, which can be verified based on a set of standard requirements and cryptographic proofs |
 
-## Introduction
+# 1. Introduction
 
 Tokenizing real-world resources is a critical enabler for the digital economy. This is also essential for transitioning the world to more accountable, sustainable means of producing and using natural resources.
 
@@ -102,7 +102,7 @@ NFT Metadata is a set of assertions which describe one or more uniquely identifi
 
 A _Resource_ is any identifiable thing. This includes physical things, documents, digital objects, abstract concepts, numbers and strings. in the context of the Internet a resource has historically been defined as “The thing which you get when you follow a link”.
 
-In the context of NFTs, a resource could be a natively digital object, such as a digital artwork, or information which is linked to physical objects, such as a digital certificate that contains assertions about a specific piece of land.
+In the context of NFTs, a resource could be a natively digital object, such as a digital artwork, or information which is linked to physical objects, such as a digital certificate that contains assertions about a specific section of land.
 
 #### Metadata
 
@@ -160,13 +160,13 @@ This means that now when we describe a resource, such as a _dataset_, in its con
 
 This approach can be used to describe any conceivable representation of a resource. We should also be able to localise resource descriptions, for these can be widely understood, regardless of a user’s language.
 
-## Use Cases
+# 2. Use Cases
 
 Each use-case presents the canonical form of a non-fungible token and the types of resources the token metadata describes. A comparison with legacy ways of describing and using resources helps illustrate the distinctive properties of these tokens and how these enable applications to be built which have not previously been possible. Examples are provided as links, which the link owner may choose to describe in their own terms, using their own resources.
 
 Note: These use-cases and examples are not exhaustive and are only intended to provide a high-level overview for an initial scope of requirements for drafting Internachain NFT and Metadata standards. This list of use-cases and examples is expected to grow. Naming use-case as types of NFTs suggests a taxonomy for NFT classes of NFTs. This taxonomy should further evolve, as the use cases are populated with new examples and as new use-case classes are discovered which don’t fit this initial list.
 
-### 1. Collectible Tokens
+### 2.1 Collectible Tokens
 
 Collectible Tokens contain unique digital objects which people desire to own. These tokens enable control over the digital objects and infer rights of ownership and usage. Owning a digital collectible may confer further rights and capabilities within a specific system, or across systems such as virtual gaming worlds.
 
@@ -179,7 +179,7 @@ Tokenizing collectible digital objects enables these to be owned and traded in v
 
 Examples: [Cryptokitties](https://www.cryptokitties.co/),
 
-### **2. Financing Tokens**
+### 2.2 Financing Tokens
 
 Financing Tokens contain real-economy financial claims and agreements. These may be associated with rights of payment for the delivery of commodities and services, and rights to receive these as agreed.
 
@@ -189,7 +189,7 @@ Tokenizing financing enables the documentary evidence and associated rights asso
 
 Examples: [Centrifuge](https://centrifuge.io/), [Persistence One](https://persistence.one/),
 
-### **3. Impact Tokens**
+### 2.3 Impact Tokens
 
 Impact tokens contain proofs about the social, environmental and economic state of the world. These tokens have intrinsic value linked to verifiable claims, outcome payments, executable rights and data assets. Impact tokens of various types may be issued, sold and traded as digital commodities. Carbon Credit Tokens are an example of Impact Tokens which are issued on the basis of verified Carbon Emission Reduction claims.
 
@@ -201,7 +201,7 @@ Tokenizing impact claims and their verification proofs makes it possible to more
 
 Examples: [ixo](https://ixo.foundation/), [Regen Network](https://www.regen.network/),
 
-### **4. Access Tokens**
+### 2.4 Access Tokens
 
 Access Tokens contain rights to use proprietary physical or virtual resources for specified purposes. These rights may be transferable or non-transferable, perpetual or time-limited.
 
@@ -213,7 +213,7 @@ Tokenizing access rights makes it possible to distribute access rights in more t
 
 Examples: [IrisNet](https://www.irisnet.org/), [Decentraland](https://decentraland.org/),
 
-### **5. Art Tokens**
+### 2.5 Art Tokens
 
 Art Tokens contain the rights to a registered patent or copyright material. These rights may be protected by intellectual property laws.
 
@@ -225,7 +225,7 @@ Tokenizing art makes it possible to determine its provenance, trade ownership of
 
  Examples: [Left Gallery](https://left.gallery/), [Molecule](http://www.molecule.io/)
 
-### **6. Physical Property Tokens**
+### 2.6 Physical Property Tokens
 
 Physical Property Tokens contain digital representations of physical-world objects and resources. They may infer rights of ownership, control and usage of physical property.
 
@@ -237,7 +237,7 @@ Tokenizing physical property makes this available to be used in digital transact
 
 Examples: [Mattereum](https://mattereum.com/),
 
-### **7. Data Tokens**
+### 2.7 Data Tokens
 
 Data Tokens contain data assets. These tokens are associated with rights of ownership of data assets and the licenses to use these assets for specific purposes.
 
@@ -249,7 +249,7 @@ Tokenizing data assets makes it possible to create new types of data marketplace
 
 Example: [Ocean Protocol](https://oceanprotocol.com/)
 
-### **8. Credential Tokens**
+### 2.8 Credential Tokens
 
 Credential Tokens contain verifiable claims about the identity and attributes of a subject. The issuers of these claims can be identified and authenticated. The subject of a credential token may have certain rights in specific contexts, which are not available without the credential.
 
@@ -261,7 +261,7 @@ Tokenizing credentials enables identity and rights associated with having certai
 
 Examples: [Starname](https://starname.me)
 
-### **9. Capability Tokens**
+### 2.9 Capability Tokens
 
 Capability Tokens contain electronic rights within software systems. These tokens transfer Object Capabilities, which are authorisations to perform restricted scopes computational processes that get executed at the level of a software operating system.
 
@@ -273,7 +273,7 @@ Tokenizing capabilities makes it possible to own a unique object capability and 
 
 Examples: [Agoric](https://agoric.com/)
 
-### **10. Commodity Tokens**
+### 2.10 Commodity Tokens
 
 Commodity Tokens contain information about the identity and origin of commodities.
 
@@ -283,7 +283,7 @@ Tokenizing commodities enables consumers to verify the provenance of a commodity
 
 Examples: [Provenance](https://provenance.org), 
 
-## Requirements
+# 3. Requirements
 
 The canonical use-cases for NFTs and Metadata have a set of common business and technical requirements. Each use-case relies on a subset of these requirements to be met.
 
@@ -317,13 +317,13 @@ The requirements for Interchain NFTs include that these should be:
 | Commodity Tokens | X | X | X | X | X | X | X | X | X | X | X | X |
 |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-## 5. User Stories
+# 4. User Stories
 
 {% hint style="info" %}
 Projects are invited to describe their use-case in the format of a short User Story. This must emphasise the unique challenges and distinctive requirements which must be met by the Interchain Standard for NFTs and Metadata. This includes edge-cases which can be helpful for testing the validity and potential limitations of these standards. To propose new user stories by submitting a Github Pull Request on this document.
 {% endhint %}
 
-### 5.1 High-quality Carbon Credits
+### 4.1 Quality Carbon Credits
 
 #### Context
 
@@ -333,7 +333,7 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
-### 5.2 Financing commodity trade deals
+### 4.2 Financing commodity trade deals
 
 #### Context
 
@@ -343,7 +343,7 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
-### 5.3 Crowd-sourced funding for Pharmaceutical Patents
+### 4.3 Crowd-sourced funding for Pharmaceutical Patents
 
 #### Context
 
@@ -353,7 +353,7 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
-### 5.4 Primary Education Impact Bond
+### 4.4 Primary Education Impact Bond
 
 #### Context
 
@@ -363,7 +363,7 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
-### 5.5 Private Credentials
+### 4.5 Private Credentials
 
 #### Context
 
@@ -373,7 +373,7 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
-### 5.6 Blockchain Transaction Receipts
+### 4.6 Blockchain Transaction Receipts
 
 #### Context
 
@@ -383,7 +383,7 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
-## 6. References
+# 5. References
 
 
 
