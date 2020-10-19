@@ -1,2 +1,2 @@
 # use-cases
-Use-cases for Interchain NFTs and Metadata
+Use-cases and Requirements for Interchain NFTs and Metadata
