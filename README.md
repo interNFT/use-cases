@@ -5,7 +5,7 @@ These contributions are intended to support the InterNFT Working Group to identi
 
 The [Use Cases and Requiremenents](https://github.com/interNFT/use-cases/blob/main/use-cases-working-draft.md) Working Draft (RFC-2) is a living document which is expected to evolve with further contributions, improvements and the addition of new use cases, examples and user stories.
 
-### Contributw your use case and requirements
+### Contribute your use case and requirements
 Your contributions are welcomed, to add new use cases, examples and user stories. Please submit your contribution as a Pull Request on the working draft document.
 
 ### Improvements to the Working Draft
