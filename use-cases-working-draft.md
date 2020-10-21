@@ -2,6 +2,19 @@
 Working Draft for Comment / Interchain Standards for NFTs & Metadata
 ---
 
+---
+nft-rfc: 2
+title: Use Cases and Requirements
+stage: draft
+category: NFT/USECASES
+kind: Requirements
+author: Shaun Conway @ig-shaun
+created: 2020-10-19
+modified: 
+---
+
+
+
 # Use Cases and Requirements
 
 ## Abstract
@@ -16,7 +29,7 @@ By presenting a set of canonical use-cases and user stories, this document start
 
 This document is intended to support the InterNFT Working Group to identify technical requirements for developing an interface standard for Interchain NFTs and an Interchain Metadata Standard for NFT referent resources. Recommendations in these standards should be sense-checked against these use-cases and requirements.
 
-This is a living document which will remain in a “working-draft” state, to encourage further contributions, improvements and addition on new use cases, examples and user stories.
+This is a living document which will remain in a “working-draft” state, to encourage further contributions, improvements and addition of new use cases, examples and user stories.
 
 ## Status of this Working Draft Document
 
@@ -215,7 +228,7 @@ Examples: [IrisNet](https://www.irisnet.org/), [Decentraland](https://decentrala
 
 ### 2.5 Art Tokens
 
-Art Tokens contain the rights to a registered patent or copyright material or function as the certificate of authenticity and/or certificate of ownership. These rights may be protected by intellectual property laws.
+Art Tokens contain the rights to a registered patent or copyright material. These rights may be protected by intellectual property laws.
 
 Art Token metadata describes the art, which may be patented or copyright physical or virtual materials, together with associated licenses and claims.
 
@@ -319,9 +332,7 @@ The requirements for Interchain NFTs include that these should be:
 
 # 4. User Stories
 
-{% hint style="info" %}
 Projects are invited to describe their use-case in the format of a short User Story. This must emphasise the unique challenges and distinctive requirements which must be met by the Interchain Standard for NFTs and Metadata. This includes edge-cases which can be helpful for testing the validity and potential limitations of these standards. To propose new user stories by submitting a Github Pull Request on this document.
-{% endhint %}
 
 ### 4.1 Quality Carbon Credits
 
@@ -384,5 +395,11 @@ Projects are invited to describe their use-case in the format of a short User St
 #### Distinctive Requirements
 
 # 5. References
+
+
+---
+## History
+
+Oct 19, 2020 - Initial early draft (not informed by consensus)
 
 
