@@ -10,9 +10,9 @@ modified:
 ---
 
 
-# Use Cases and Requirements
+## Use Cases and Requirements Working Draft
 
-## Abstract
+### Abstract
 
 Non-Fungible Tokens are containers for uniquely identified resources, which are represented by NFT metadata. NFTs enable rights of ownership and control over resource identifiers. They may also contain other rights, within specific contexts and use-case.
 
@@ -26,7 +26,7 @@ This document is intended to support the InterNFT Working Group to identify tech
 
 This is a living document which will remain in a “working-draft” state, to encourage further contributions, improvements and addition of new use cases, examples and user stories.
 
-## Status of this Working Draft Document
+### Status of this Working Draft Document
 
 _This section describes the status and current Git Version of this document. Other documents may supersede this document._
 
@@ -38,7 +38,7 @@ The use case model and specific examples described here are not intended to be e
 
 [GitHub Issues](http://tbc/) are preferred for discussion of this specification. Changes may be proposed as Github Pull Requests.
 
-## Terminology
+### Terminology
 
 | Authentication | A process which is defined by a protocol for an entity to prove it has a specific attribute or that it controls a specific secret, using one or more [verification methods](https://www.w3.org/TR/did-use-cases/#dfn-verification-method). |
 | :--- | :--- |
@@ -68,7 +68,7 @@ The use case model and specific examples described here are not intended to be e
 | Verification | Evaluation of a claim to determine if it is valid, authentic, conforms to a required standard specification, and satisfies a defined cryptographic proof method |
 | Verifiable Claim | An assertion about a subject, made by an identified entity who can be authenticated, which can be verified based on a set of standard requirements and cryptographic proofs |
 
-# 1. Introduction
+## 1. Introduction
 
 Tokenizing real-world resources is a critical enabler for the digital economy. This is also essential for transitioning the world to more accountable, sustainable means of producing and using natural resources.
 
@@ -168,7 +168,7 @@ This means that now when we describe a resource, such as a _dataset_, in its con
 
 This approach can be used to describe any conceivable representation of a resource. We should also be able to localise resource descriptions, for these can be widely understood, regardless of a user’s language.
 
-# 2. Use Cases
+## 2. Use Cases
 
 Each use-case presents the canonical form of a non-fungible token and the types of resources the token metadata describes. A comparison with legacy ways of describing and using resources helps illustrate the distinctive properties of these tokens and how these enable applications to be built which have not previously been possible. Examples are provided as links, which the link owner may choose to describe in their own terms, using their own resources.
 
@@ -291,7 +291,7 @@ Tokenizing commodities enables consumers to verify the provenance of a commodity
 
 Examples: [Provenance](https://provenance.org), 
 
-# 3. Requirements
+## 3. Requirements
 
 The canonical use-cases for NFTs and Metadata have a set of common business and technical requirements. Each use-case relies on a subset of these requirements to be met.
 
@@ -325,7 +325,7 @@ The requirements for Interchain NFTs include that these should be:
 | Commodity Tokens | X | X | X | X | X | X | X | X | X | X | X | X |
 |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-# 4. User Stories
+## 4. User Stories
 
 Projects are invited to describe their use-case in the format of a short User Story. This must emphasise the unique challenges and distinctive requirements which must be met by the Interchain Standard for NFTs and Metadata. This includes edge-cases which can be helpful for testing the validity and potential limitations of these standards. To propose new user stories by submitting a Github Pull Request on this document.
 
@@ -389,7 +389,7 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
-# 5. References
+## 5. References
 
 
 ---
