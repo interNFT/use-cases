@@ -1,8 +1,4 @@
 ---
-Working Draft for Comment / Interchain Standards for NFTs & Metadata
----
-
----
 nft-rfc: 2
 title: Use Cases and Requirements
 stage: draft
@@ -12,7 +8,6 @@ author: Shaun Conway @ig-shaun
 created: 2020-10-19
 modified: 
 ---
-
 
 
 # Use Cases and Requirements
