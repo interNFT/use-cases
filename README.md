@@ -3,7 +3,7 @@ The purpose of this repo is to document and solicit community feedback on the ca
 
 These contributions are intended to support the InterNFT Working Group to identify technical requirements for developing an interface standard for Interchain NFTs and an Interchain Metadata Standard for NFT referent resources. Recommendations in these standards will be sense-checked against the use-cases and requirements.
 
-The [Use Cases and Requiremenents](https://github.com/interNFT/use-cases/blob/main/use-cases-working-draft.md) Working Draft (NFT-RFC-002) is a living document which is expected to evolve with further contributions, improvements and the addition of new use cases, examples and user stories.
+The [Use Cases and Requiremenents](https://github.com/interNFT/use-cases/blob/main/NFT-REC-002-use-cases.md) Working Draft (NFT-RFC-002) is a living document which is expected to evolve with further contributions, improvements and the addition of new use cases, examples and user stories.
 
 ### Contribute your use case and requirements
 Your contributions are welcomed, to add new use cases, examples and user stories. Please submit your contribution as a Pull Request on the working draft document.
