@@ -389,6 +389,16 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
+### 4.7 Media IP & Distribution
+
+#### Context
+
+#### User Needs
+
+#### Unique Challenges
+
+#### Distinctive Requirements
+
 ## 5. References
 
 
