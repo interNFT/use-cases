@@ -59,7 +59,7 @@ The use case model and specific examples described here are not intended to be e
 | Metadata | Machine understandable information about web resources or other things |
 | Non-Fungible | Things that are uniquely identifiable individually, or as part of a set of things which are not equivalent, which makes them not interchangeable |
 | Referent | The [resource](https://www.w3.org/TR/rdf11-concepts/#dfn-resource) [denoted](https://www.w3.org/TR/rdf11-concepts/#dfn-denote) by an [IRI](https://www.w3.org/TR/rdf11-concepts/#dfn-iri) |
-| Re-fungible | Unique divisible things with shared ownership |
+| Re-fungible | Unique divisible resources with shared ownership |
 | [Representation](https://www.w3.org/TR/webarch/#def-representation) | Information about a past, current, or desired future state of a resource, in a data format that can be readily communicated and understood with metadata. Representations do not necessarily describe the actual resource, or portray a likeness of the resource, or represent the resource in other senses of the word "represent". \(As defined by [RFC7231](https://www.w3.org/TR/did-use-cases/#bib-rfc7231)\) |
 | Resource | Any identifiable thing. Including physical things, documents, digital objects, abstract concepts, numbers and strings. “Anything that may be identified by a URI” \(As defined by [RFC3986](https://www.w3.org/TR/did-use-cases/#bib-rfc3986)\) |
 | State | A computational model which represents one of a finite set of possible states at a given point in time, which cannot be reversed and which enforces a state transition process to change at the state at a subsequent point in time |
