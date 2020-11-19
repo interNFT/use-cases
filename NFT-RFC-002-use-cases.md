@@ -305,25 +305,24 @@ The requirements for Interchain NFTs include that these should be:
 6. **Lockable** to conditionally stop changes in the token metadata.
 7. **Immutable** to never permit changes in the token metadata.
 8. **Mutable** to unconditionally permit changes in the token metadata.
-9. **Re-fungible** to mint fungible tokens which represent interchangeable units of information.
-10. **Divisible** to allow fractional ownership of non-fungible parts.
-11. **Composible** to be owned by another non-fungible token and added to that token’s set or to produce other novel combinatorial forms.
-12. **Conditional** to only permit changes or transfers when specific conditions have been met.
+9. **Fractional** to mint fungible tokens which represent fractional ownership of non-fungible parts.
+10. **Composible** to be owned by another non-fungible token and added to that token’s set or to produce other novel combinatorial forms.
+11. **Conditional** to only permit changes or transfers when specific conditions have been met.
 
-|  | **Requirements** |  |  |  |  |  |  |  |  |  |  |  |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Use-Case** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **10** | **11** | **12** |
-| Collectible Tokens | X |  | X | X |  | X | X | X | X |  |  |  |
-| Financing Tokens | X | X | X | X | X | X | X | X | X | X | X | X |
-| Impact Tokens | X | X | X | X | X | X | X |  | X | X | X | X |
-| Access Tokens | X | X | X | X | X | X | X | X | X | X | X | X |
-| Art Tokens | X |  | X | X |  |  | X | X | X | X | X | X |
-| Physical Property Tokens | X | X | X | X | X | X | X | X | X | X | X | X |
-| Data Tokens | X | X | X | X | X | X | X | X | X | X | X | X |
-| Credential Tokens | X | X |  | X | X |  | X |  |  |  | X | X |
-| Capability Tokens |  |  |  |  |  |  |  |  |  |  |  |  |
-| Commodity Tokens | X | X | X | X | X | X | X | X | X | X | X | X |
-|  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | **Requirements** |  |  |  |  |  |  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Use-Case** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **10** | **11** |
+| Collectible Tokens | X |  | X | X |  | X | X | X | X |  |  |
+| Financing Tokens | X | X | X | X | X | X | X | X | X | X | X |
+| Impact Tokens | X | X | X | X | X | X | X |  | X | X | X |
+| Access Tokens | X | X | X | X | X | X | X | X | X | X | X |
+| Art Tokens | X |  | X | X |  |  | X | X | X | X | X |
+| Physical Property Tokens | X | X | X | X | X | X | X | X | X | X | X |
+| Data Tokens | X | X | X | X | X | X | X | X | X | X | X |
+| Credential Tokens | X | X |  | X | X |  | X |  |  | X | X |
+| Capability Tokens |  |  |  |  |  |  |  |  |  |  |  |
+| Commodity Tokens | X | X | X | X | X | X | X | X | X | X | X |
+|  |  |  |  |  |  |  |  |  |  |  |  |
 
 ## 4. User Stories
 
