@@ -388,6 +388,77 @@ Projects are invited to describe their use-case in the format of a short User St
 
 #### Distinctive Requirements
 
+### 4.8 Resellable Theatre Tickets
+
+#### Context
+As COVID restrictions are lessened in their area, Ellenor and Vicki have decided that they want to try to go to their town theatre’s reopening screening of The Phantom of the Opera. After reviewing the theatre’s COVID plan they decide that they are comfortable giving the experience a shot so Ellenor goes to Nearest Town Theatre’s web page to purchase two tickets for the upcoming play. 
+
+Ellenor goes to Nearest Town Theatre’s web page, clicks the “Purchase” button and is taken to the ticketing agency, Nearest Town Ticketing Agency’s, web page who have been given the rights to sell tickets for Nearest Town Theatre along with a set of rules specified by the theatre which detail the COVID seating requirements. Due to these COVID restrictions, Ellenor finds she must reserve specific seats in the theatre to allow for proper spacing of groups. She selects two seats on the aisle about midway back in the theatre and clicks “Complete Purchase” where she is taken to a page requesting payment. 
+
+Here Ellenor is greeted by a page which allows her to select any of the payment options that Nearest Town Ticketing Agency has chosen to accept. Once payment information is submitted, the payment is swapped with the tickets so that in one atomic exchange Nearest Town Theatre receives the payment in question, Ellenor receives the tickets and Nearest Town Ticketing Agency receives their cut of the payment as specified in their contract with Nearest Town Theatre.
+
+As the date of the show approaches, Ellenor has a family emergency come up which is going to prevent her from attending. Ellenor gives Vicki her ticket, as Vicki has previously paid Ellenor in cash for hers, but as money is tight Ellenor tells Vicki that she would, ideally, like to sell her ticket to someone that Vicki would want to go with in her stead. Ellenor creates an offer which gives Vicki the ability to initiate the sale of the ticket to a third party so that when Vicki finds someone that agrees to the price she can send the ticket offer to the found third party. When creating the offer, Ellenor is notified when she selected “Resale” on the ticket that Nearest Town Theatre has restricted the resale price to only allow for resale at the face value sale price of the ticket or below. 
+
+Vicki asks her friend, Stephen, if he is amenable to going and he agrees to pay Ellenor the face value of the ticket with an addendum that he would only want to go if they can sit closer to the stage as he saw that Lin-Manual Miranda was making a cameo appearance and wants to make sure to have a good view. Vicki agrees to this seat change and they both look up the current seat map for the show, deciding on two seats in the second row. As Stephen receiving the ticket is the current limiting factor to show attendance, Vicki first modifies the offer Ellenor gave her and adds a condition specifying that, as part of the third party sale of the ticket a seat change needs to occur. After which Vicki sends the new offer to Stephen, who also modifies the offer, adding a requirement for the purchase that his seat is also changed. 
+
+Ellenor is notified of the proposed changes to the offer and as changing seats does not affect Ellenor’s desire to sell the ticket, she approves the modified offer and this triggers the beginning of the resolution process. First, both Vicki and Stephen are notified that the changes to the offer have been accepted and they are prompted to select the seats which they would like to change to. After they both select their desired seats, Nearest Town Ticketing Agency provides an assurance that the specified seats will be held pending the completion of the ticket sale to Stephen. Once this is complete, Stephen is asked to submit payment to Ellenor in any of the ways she has advertised in the offer. He selects the one he is most comfortable with and submits the payment to be held and released to Ellenor in an atomic swap for the ticket. Once both the seating changes and Stephen’s payment has been submitted, all three items, the ticket to Stephen, the payment to Ellenor and the two seat changes, are exchanged simultaneously. 
+
+On the day of the show, Vicki and Stephen decide on a last minute whim to try and change their seats again. However, this time when they go to request the change they are notified that seats cannot be changed within 24 hours of the show. Despite this they both arrive at the play that night, present their tickets at the ticketing counter and enjoy the play. 
+
+#### User Needs
+User needs here are broken down for each of the three users presented in the above story: Ellenor, Vicki and Stephen. 
+
+__Ellenor__
+* Mechanism for submitting payment digitally
+* Digital storage and display mechanism to store the received tickets
+* Mechanism to transfer the tickets to a third party without payment for the ticket
+* Mechanism to transfer the tickets to a third party with payment for the ticket
+* Ability to give/sell an option to another party
+* As well as revoke said option
+* Digital Ticket received must specify assigned seat in a human readable format for use at the venue
+
+__Vicki__
+* Implied allowance (through initial purchase) for Ellenor to hold her ticket
+* Digital Wallet with which to receive the ticket from Ellenor
+* Ability to hold the offer given by Ellenor
+* Ability to share offer with third party
+* Ability to present the ticket at the play
+* Ability to give the right to change her seat to Stephen
+
+__Stephen__
+* Digital Wallet to receive the initial “ticket offer” from Vicki
+* Ability to create a counter-offer with different conditions from the original
+* Ability to provide payment in response to fulfill “ticket offer”
+* Ability to receive the ticket in his digital wallet
+* Ability to present the ticket at the play
+
+#### Unique Challenges
+Here the primary unique challenge, outside of the expectation of all parties being onboarded to and using some form of digital wallet (or other digital storage) which can hold the specified data objects, is the handling of the transfer of the play ticket from Ellenor to Stephen with Vicki acting as an intermediary for the transaction. There are a few interesting things happening in this story. 
+* First Ellenor providing an offer which allows Vicki to act as an intermediary with Ellenor never needing to know who exactly the ticket is being resold to
+* Next Vicki being able to modify the offer to add a condition that she must be allowed to complete a change in seat for the purchase to go through. Here Vicki is a third party to the actual sale of the ticket adding a sale requirement to the offer. 
+* Finally Stephen being able to modify the offer in the same way as Vicki
+Once the offer modifications happen it then must be ensured that Vicki and Stephen get to choose their seat change after the final offer is accepted by Ellenor and the subsequent atomic transfer of all parties needs: Ellenor gets her money, Stephen gets his ticket and both Vicki and Stephen get their new seat. 
+
+__Metadata Requirements:__ Mintable, Burnable, Ownable, Transferable, Lockable, Mutable, Conditional 
+
+#### Distinctive Requirements
+* Delegate the right to initiate a contract handshake to another party
+* Resolve an outstanding contract between two entities that have not interacted prior to the attempted contract resolution
+* Atomic transfers that satisfy the simultaneous conditions of multiple parties
+* Utilization of third parties (though maybe limited to involved third parties, e.g. the ticketing agency) to fulfill/verify conditions placed on a contract
+
+#### NFT Metadata Layer Model
+| Layer |  |
+|-----|------|
+| **8. Operationalization** | At ticketing, Vicki and Stephen each present a QR code representing their ticket to a scanner in the theatre lobby. Lights illuminate a path to their seats and the tickets are recorded as used. |
+| **7. Assertions** | TicketAdvisor claims performances through the month of December 15 will have a cameo by Lin-Manual Miranda. [??? is this part of this scenario or is there a better assertion] | 
+| **6. Extensions &    Restrictions to Rights** | Seats changed to B16 and B18. Seat changes after December 14 at 8PM are no longer allowed. | 
+| **5. Instantiation** | Two tickets to see Phantom of the Opera at 8 PM on December 15, 2020, seats D24 and D26, respectively. (Two separate tokens) |  
+| **4. Embodied Rights** | Theatre Ticket: Right to attend and be seated at a particular performance, at a particular venue, at a particular time. Seats are changeable if alternative seats are available. |
+| **3. Token Logic** | Resellable Bearer token | 
+| **2. Interchain** | Atomic transactions guarantee all transfers happen simultaneously: payment to Ellenor, transfer of ticket to Stephen, and change of both seats | 
+| **1. State Machine** | Stephen pays Ellenor via bitcoin. Ticketing is on Ticket Chain, Payments are on MoneyChain (which has fiat onramps / offramps) |
+
 ## 5. References
 
 
