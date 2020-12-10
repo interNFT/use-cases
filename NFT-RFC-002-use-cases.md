@@ -438,6 +438,16 @@ Uncertainty: “How sure are we about the monitoring and quantification methodol
 
 #### Distinctive Requirements
 
+### 4.7 Media IP & Distribution
+
+#### Context
+
+#### User Needs
+
+#### Unique Challenges
+
+#### Distinctive Requirements
+
 ### 4.8 Resellable Theatre Tickets
 
 #### Context
