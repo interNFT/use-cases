@@ -331,10 +331,60 @@ Projects are invited to describe their use-case in the format of a short User St
 ### 4.1 Quality Carbon Credits
 
 #### Context
+As pressure mounts to balance the yearly global carbon budget due to increasing risk to life, property and markets due to climate related 
+
+Carbon accounting, markets and politics.
+Long lobbied by scientists and citizen groups, corporations and governments are finally taking climate related risk seriously.  As voluntary and compliance markets for carbon, corporate science based reporting, emissions taxes and other mechanisms become more common, the demands for carbon accounting integrity become more challenging to meet.  
+
+Carbon accounting and science:
+Carbon accounting should follow the natural carbon cycle. Emissions (respiration) and sequestration (inspiration). The global carbon budget must not simply be brought to net zero as quickly as possible, it must also achieve a carbon negative balance for some time to bring us back to pre-industrial levels if we want to guarantee conditions conducive to biosphere functioning as humans have evolved.  
+
+Carbon accounting and markets.
+There are three major types of carbon credits.  
+Avoided emissions (a factory spent money to increase efficiency and can claim credits as they reduce emissions).
+Renewable Energy Credits (a city shifts from fossil fuel based energy to renewable energy and claims credits associated with the quantification of carbon emissions reduction)
+Natural carbon or “living carbon” which is incapsulated by “terraculture” and “mariculture” (AFOLU: Agriculture, Forestry and other Land Use) and Blue Carbon in which sequestration and/or maintenance of carbon stocks in living systems is monitored and quantified.
+
+Living Carbon User Story:
+
+User Story One: Interchain credit transfer
+
+Acme Ag and their ecosystem of farmers, processors, and logistics providers, would like to meet the ambitious goals of carbon neutrality by 2030, and even explore if providing carbon credits to industries that cannot hope to achieve carbon negative operations (such as the energy sector), could become a long term profit center.
+
+Acme ag wants to be able to have accurate carbon reporting internally, as well as participate in markets to buy and sell carbon credits to ensure year over year they can meet carbon accounting goals 1st and position themselves to be a provider of carbon to the market they believe is coming, in partnership with their farmers.
+
+Farmer Jane provides produce to Acme ag.  She would like to add carbon credit sales to her list of produce.  In addition to Acme there are also several other marketplaces forming and Jane wants to be able to find the best possible price for her carbon with the least amount of work.
+
+A start up carbon market (Market1) approaches her with an easy monitoring and verification onboarding scheme and upfront payment in exchange for her carbon.  She accepts because she needs the cash.  Market1 is running as a smart contract in an Ethereum state channel.  
+
+Acme ag partners with a second marketplace (Market2) which has a higher price, and a different and more rigorous verification threshold. Jane second guesses her decision and registers on Market2 as well as Market1.
+
+The first round of carbon credits have already been issued. The transition of carbon from Market1 to Market2 requires running additional data collection and uses a different quantification algorithm that is considered by many to be more rigorous and has less uncertainty.  Market2 is running on a cosmosSDK chain.  
+
+Acme ag agrees to underwrite the cost of additional verification.   
+
+Acme ag does not want Farmer Jane's geolocation to be public and desires that this data be kept private and only available to approved monitors and verifiers in the system because they are worried about a competing company poaching their high preforming farmers
 
 #### User Needs
+Acme Ag demands that there be no counter carbon claims on the farm in question
+Acme Ag demands ability to audit and hold seller liable for double counting
+Farmer Jane requires access to multiple markets
+Farmer Jane requires monitoring and verification costs to be shouldered by purchaser
+Market1: Need to be paid back for the carbon they prepurchased
+Market2 Needs to be able to burn or represent the movement of that carbon to market2 Needs to be able to represent the provenance of the carbon in question (both geolocation and the fact it moves from a different registry)
+Market2 Needs to be able to update the claim with the new methodology but maintain consistency in the time period and geolocation of the claim
 
 #### Unique Challenges
+
+Carbon markets have four major accounting concerns:
+
+Additionality: “Who has the right to account for the carbon mitigation or sequestration” in some markets you must not only prove that the carbon was not emitted, but also that if you were not paid it WOULD have been emitted (I call this the carbon hostage approach to additionality).  Multiple parties must be able to claim responsibility accurately and with integrity so that the right party(ies) has(ve) the right to claim the carbon.
+
+Permanence: “How long will this carbon be sequestered, or stored?”  In living carbon claims permanence is variable dependent on conditions such as droughts (which force emissions) rainfall (which increases sequestration) that are beyond human control, as well as activities (land use practices) which are within human control. This creates complexity. It is essential to have global carbon buffer pools to cover permanence issues from both human causes and natural caused reduction of carbon stocks. This requires some fungibility.  
+
+Leakage: “Does this change create a carbon emission increase somewhere else”. For instance does forest conservation in one place cause a forest somewhere else to be cut down? Ability to link credit claims to a larger system of carbon accounting (transport, etc) are important.  Ability for counter claims are important.  
+
+Uncertainty: “How sure are we about the monitoring and quantification methodology that is under the hood of the carbon credit in question”.  There is always some uncertainty as this is a probabilistic science, especially with living carbon credits.  Metadata associated with the evidence backing a credit, the specific threshold of “verification”, and clear statements of uncertainty are required.  
 
 #### Distinctive Requirements
 
