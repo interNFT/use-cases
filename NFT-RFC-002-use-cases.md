@@ -411,12 +411,52 @@ Uncertainty: “How sure are we about the monitoring and quantification methodol
 ### 4.4 Primary Education Impact Bond
 
 #### Context
+Ruari is the director of a large education charity which focuses on building and updating infrastructure in low income schools in California. Recently his organization has been investigating a problem they have noticed where a large percentage of schools in the lower income counties have not had their lab equipment updated in close to 30 years, which has lead to, according to a set of studies, an increased disparity in performance and engagement in students in these areas compared to counties which have funded these renovations in the past decade. 
+
+In an attempt to solve this issue, Ruari’s organization setups what they are calling the New Labs Initiative Impact Bond, and have been able to get the promises of two other local charity groups in Los Angeles, where they will be piloting the program, which collectively have pledged a total of $10 million to the outcome fund. The three charities have collectively set outcome criteria as a function of both number of students serviced by the newly upgraded labs and the location of the school services so that higher rates of returns will be paid if the schools serviced are in what the outcome funding group has defined as schools in areas of “highest need.” In addition to these specific outcome criteria, the outcome funding group has also set a series of meta goals for the project as a whole where additional funding will be released once various percentages of schools have been serviced in the area with a target of reaching 75% of the identified “highest need” schools in five years. 
+
+Once the outcome funding has been pledged, Ruari approaches several companies in the local Los Angeles region and gets buy-in from four which agree to start upgrading the schools per the bond specifications. These companies take on the upfront capital investment costs of the upgrades which, when completed at a particular location, are evaluated by either a representative of the specific school’s administration or the county school board. This representative presents the company with a signed verification that the school was updated to the specified standards. This signed verification is wrapped as part of the verified claim which Company A eventually bundles and submits as a claim group that confirms they have upgraded labs as confirmed by the site verification entity. 
+
+The verifiable claims submitted by Company A prove that they upgraded labs which will service 10,000 students and that this covers 35% of the students in East Los Angeles County. They receive the specified payout from the outcome fund based on this claim bundle for both the site specific and meta-level metrics they achieved. This project continues over the next 5 years with various companies joining and leaving the project. Five years later the project was able to get 80% of the labs upgraded in the set of schools initially scoped by the project and Ruari is now going out to try and raise another round of outcome funding with the intention of taking this widely successful program to more cities around the country. 
+
 
 #### User Needs
+User needs here are broken down for each of the three users presented in the above story: Ellenor, Vicki and Stephen. 
+
+__Outcome Funder__
+* Configuration of a clear set of criteria on which to base the outcome payments
+* Assurance that reported outcomes are properly validated by a clear and mutually agreed upon validation method
+* Mechanism to make the outcome payments as the various companies who are fronting the upfront costs reach desired outcome levels
+
+__Investing Companies__
+* Clear criteria for receiving outcome payments
+* Clear return on investment when the criteria for an outcome payment is met
+* Mechanism to receive the outcome payments once the company has reached the specified criteria
 
 #### Unique Challenges
+The metadata in this user story comes in when a company is reporting the outcome. This would be:
+* Where the serviced school is located
+* How many students will the upgraded labs service
+
+Given that the outcome funders want assurance that the company has properly completed the task for the outcome payment this means that the NFT generated from a token representing a set outcome claims will need to be:
+__Metadata Requirements:__ Mintable, Burnable, Ownable, Transferable, Lockable, Immutable, Composible
+
+In addition there is the interesting problem of how the outcome claims are verified. Likely this project would need buy-in from at least a set of school administrators who are willing to participate in the verification and feedback mechanisms that the outcome funders have decided they will need to have confidence in funding this project. 
 
 #### Distinctive Requirements
+Companies taking part in this project will want to be able to, in various circumstances, submit both outcome claims for a particular instance, i.e. one school has been serviced, while also having the ability to submit a group of claims at the same time. This will allow for the project to have flexible outcome payments which should enable companies both small, who may need to receive the ROI as soon as possible for their revenue stream, and large, who can whether the revenue hit until they finish a batch of projects, to both take part in the project. 
+
+#### NFT Metadata Layer Model
+| Layer |  |
+|-----|------|
+| **8. Operationalization** | Holder of the verified claim NFT submits a transaction to the bond chain and receive the associated payment |
+| **7. Assertions** | Verifiable claims are assertions by witnesses about the underlying impact claim, which constitute evidence for oracles. | 
+| **6. Extensions &    Restrictions to Rights** | N/A | 
+| **5. Instantiation** | A particular token for a particular set of claims asserting the creation of a particular outcome. |  
+| **4. Embodied Rights** | Redeemable for a particular outcome payment. |
+| **3. Token Logic** | The NFT created by the verification chain oracle is a cryptographically transferable resource. | 
+| **2. Interchain** | The verification chain supports oracles who can produce NFTs which, themselves, can trigger payment transfers on the cryptocurrency chain. | 
+| **1. State Machine** | Cryptocurrency chain for Outcome Funders, Verification Chain for collecting and verifying original assertions of root outcomes. |
 
 ### 4.5 Private Credentials
 
