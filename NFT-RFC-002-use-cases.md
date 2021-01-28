@@ -408,15 +408,91 @@ Uncertainty: “How sure are we about the monitoring and quantification methodol
 
 #### Distinctive Requirements
 
-### 4.4 Primary Education Impact Bond
+### 4.4 Science Education Impact Bond
 
 #### Context
+Ruari is an education researcher for a large education charity in California who believes he has identified a large contributing factor in the performance differences seen in
+high school students for the math and science fields as being tied to the state of science lab facilities in elementary schools. He believes that by funding the upgrading of
+science and computer labs in low income areas, targeting kindergarten through 5th grade students, not only will you see an immediate increase in student performance in these
+areas but it will have a great impact on the students eventual performance later on in their schooling. 
+
+While trying to figure out how to fund his idea, Ruari stumbles upon a new California State Educational Impact Bond Program which is designed to give researchers the ability to
+test their theories in practice, utilizing measurable increases in student performance to allocate funding to programs and ideas that are able to demonstrably show success.
+Looking over the outcome states, Ruari sees that projects are funded based on a set of criteria which include, for each student affected by a given project: semester to 
+semester grade increases‒tied to their report cards, and end of the year test scores‒as submitted to the state by each school. Projects participating in the program will not
+receive any data about individual students but rather summaries based school-wide data. Additionally Ruari sees that while grade and test score increases form the foundation of
+the outcome payments, you can also receive increased payments based on different levels of improvements the students show‒e.g. one grade improvement gets 10$ per student, two 
+grades 15$ per student, etc. He also finds that he is allowed to specify project scope via fields of study the project is expected to affect‒e.g. science and math in this case. 
+
+Finding all of the outcome criteria acceptable Ruari registers his new project with the California State Educational Impact Bond Program and decides that the best way to test 
+his research would be to utilize the funding to incentivize the local companies who deal in school equipment to upgrade the labs in the areas his research has identified having
+the highest likelihood of showing success. Ruari’s organization sets up what they are calling the New Labs Initiative Impact Bond, and have published an outcome payment 
+structure where they will pay companies who front the investment cost of the lab upgrade as the project begins to receive its outcome payments from the state at the end of the
+first year of the project, which is when it becomes eligible to receive its first outcome payments. 
+
+Ruari has structured this sub-bond with set outcome criteria as a function of both number of students serviced by the newly upgraded labs and the location of the school 
+services so that higher rates of returns will be paid if the schools serviced are in what the outcome funding group has defined as schools in areas of “highest need.” In 
+addition to these specific outcome criteria, he has also set a series of meta goals for the project as a whole where companies who have upgraded large percentages of schools in
+an area will be able to increase their share of the outcome payments.. 
+
+Once he and his charity have finalized their structure, Ruari approaches several companies in the local Los Angeles region and gets buy-in from four which agree to start 
+upgrading the schools per the bond specifications. These companies take on the upfront capital investment costs of the upgrades which, when completed at a particular location,
+are evaluated by both a school administration representative and an auditor from Ruari’s organization. Both the representative and auditor presents the company with signed 
+verification that the school was updated to the specified standards. This signed verification is submitted to Ruari as proof that the company completed the lab upgrades per the
+specifications of the group. Once done, Ruari submits a claim to the state program that his project has completed their goal for the specified school and the state adds the school to Ruari’s project index. 
+
+After the first semester of the project, Ruari was able to get a total of 100 school upgrades representing a total student population of 10,000 students. He is able to view the
+outcome summaries for the schools his project submitted as “upgraded” to the California Education Impact Bond Program and his project receives their outcome payments based on
+how the students at the schools who received lab upgrades over the previous summer performed. Before Ruari and his organization can take their cut, the outcome payments from 
+the state are automatically distributed to the companies who funded the initial lab upgrades. 
+
+At the end of the first year, since the involved companies saw a good return on their investment from the outcome payments, Ruari is able to get more buy in and expand the 
+program to the rest of the state as companies who handle school supplies in other cities become interested in the program. Eventually Ruari’s organization is able to use the 
+data collected through the California program to expand to other states and nations.
+
+
 
 #### User Needs
+User needs here are broken down for each of the three users presented in the above story: Ellenor, Vicki and Stephen. 
+
+__Outcome Funder__
+* Configuration of a clear set of criteria on which to base the outcome payments
+* Assurance that reported outcomes are properly validated by a clear and mutually agreed upon validation method
+* Mechanism to make the outcome payments as the various companies who are fronting the upfront costs reach desired outcome levels
+
+__Investing Companies__
+* Clear criteria for receiving outcome payments
+* Clear return on investment when the criteria for an outcome payment is met
+* Mechanism to receive the outcome payments once the company has reached the specified criteria
+   - Including assurance that the organizing (Ruari’s) company cannot walk away with their portion of the funds. 
+
+__Students__
+* Privacy assurance that the projects and program, while based on individual student outcomes, will not be able to identify any individual student who participated. 
 
 #### Unique Challenges
+* The partitioning of outcome payments to different groups
+   - Initially to Ruari’s organization
+   - Then to the companies who performed the lab upgrades in such a way that it would allow these companies to feel comfortable entering the project to begin with
+* Assurance of privacy/anonymity for the students
+
+Given that the Ruari’s organization wants assurance that the a company has properly completed the task (lab upgrade) for the outcome payment this means that the NFT generated from a token representing a set outcome claims will need to be:
+
+__Metadata Requirements:__ Mintable, Burnable, Ownable, Transferable, Lockable, Immutable, Composible
 
 #### Distinctive Requirements
+Companies taking part in this project will want to be able to, in various circumstances, submit both outcome claims for a particular instance, i.e. one school has been serviced, while also having the ability to submit a group of claims at the same time. This will allow for the project to have flexible outcome payments which should enable companies both small, who may need to receive the ROI as soon as possible for their revenue stream, and large, who can whether the revenue hit until they finish a batch of projects, to both take part in the project. 
+
+#### NFT Architecture Model
+| Layer |  |
+|-----|------|
+| **8. Operationalization** | Holder of the verified claim NFT submits a transaction to the bond chain and receive the associated payment |
+| **7. Assertions** | Verifiable claims are assertions by witnesses about the underlying impact claim, which constitute evidence for oracles. | 
+| **6. Extensions &    Restrictions to Rights** | N/A | 
+| **5. Instantiation** | A particular token for a particular set of claims asserting the creation of a particular outcome. |  
+| **4. Embodied Rights** | Redeemable for a particular outcome payment. |
+| **3. Token Logic** | The NFT created by the verification chain oracle is a cryptographically transferable resource. | 
+| **2. Interchain** | The verification chain supports oracles who can produce NFTs which, themselves, can trigger payment transfers on the cryptocurrency chain. | 
+| **1. State Machine** | Cryptocurrency chain for Outcome Funders, Verification Chain for collecting and verifying original assertions of root outcomes. |
 
 ### 4.5 Private Credentials
 
