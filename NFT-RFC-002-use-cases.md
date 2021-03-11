@@ -330,54 +330,78 @@ Projects are invited to describe their use-case in the format of a short User St
 
 ### 4.1 Quality Carbon Credits
 
-####Context
+#### Context
 The commonly understood risks and impacts of global climate change are rapidly increasing and accelerating.  With this trend, pressure mounts to reduce greenhouse gas emissions, remove carbon from the atmosphere, and balance the annual global carbon budget for the protection of life, property and markets.
+
 Carbon accounting and markets are now widely accepted by scientists and citizen groups, corporations and governments who are finally taking climate related risk seriously. As voluntary and compliance markets for carbon, corporate science based reporting, emissions taxes and other mechanisms become more common, the demands for carbon accounting integrity become more challenging to meet.
+
 In support of rapid climate action, it is important for carbon accounting to be grounded in and tracking natural carbon cycles of emissions and sequestration. An essential goal is not simply to bring the  global carbon budget to net zero but also to reach a state of being  a carbon negative for some time to bring atmospheric carbon concentrations back to pre-industrial levels if we want to guarantee conditions conducive to biosphere functioning as humans have evolved.
-Carbon accounting and markets. There are different types of carbon credits.
+
+#### Carbon accounting and markets
+
+There are different types of carbon credits.
+
 Generally speaking we can think of carbon credits in two larger categories: emissions reduction, and negative emissions or carbon removal.  Emissions reductions focus on increasing energy efficiency, lowering ghg emissions and include categories such as renewable energy, avoided deforestation, and efficiency projects).  Carbon removal or negative emissions based credits are actively accounting for the net removal of carbon or other ghg from the atmosphere and storing it permanently, or for a term/time period determined by the credit class. A third type of carbon asset: carbon storage, may become important in the future, however there are not currently carbon storage markets. 
-####Living Carbon User Story:
+
+#### Living Carbon User Story
+
 For the purpose of this user story we will use the following carbon definitions: 
-Living carbon: organic, flowing in biological cycles, providing fresh food, healthy forests and fertile soil; something we want to cultivate and grow
-Durable carbon: locked in stable solids such as coal and limestone or recyclable polymers that are used and reused; ranges from reusable fibers like paper and cloth, to building and infrastructure elements that can last for generations and then be reusedFugitive carbon: has ended up somewhere unwanted and can be toxic; includes carbon dioxide released into the atmosphere by burning fossil fuels, ‘waste to energy’ plants, methane leaks, deforestation, much industrial agriculture and urban development
+
+- *Living carbon*: organic, flowing in biological cycles, providing fresh food, healthy forests and fertile soil; something we want to cultivate and grow
+- *Durable carbon*: locked in stable solids such as coal and limestone or recyclable polymers that are used and reused; ranges from reusable fibers like paper and cloth, to building and infrastructure elements that can last for generations and then be reusedFugitive carbon: has ended up somewhere unwanted and can be toxic; includes carbon dioxide released into the atmosphere by burning fossil fuels, ‘waste to energy’ plants, methane leaks, deforestation, much industrial agriculture and urban development
 Source: https://mcdonough.com/new-language-carbon/
 
 *Living carbon* can be turned into durable carbon with timber, biochar, bioplastics and conversion to other durable materials.
 Living carbon storage capacity is also variable, with ecosystems being able to, slowly and over time, grow their capacity to store carbon in soil, etc until at a certain point systems reach a “saturation point”.  
-####User Story One: Credit issuance and transfer.  
-Interchain credit transfer
-Acme Ag and their community of farmers, processors, and logistics providers, would like to meet the ambitious goals of carbon neutrality by 2030.  Beyond that coal, there is also interest in exploring if providing carbon credits to industries that cannot hope to achieve carbon negative operations (such as the energy sector), could become a long term profit center.
-Acme ag wants to be able to have accurate carbon reporting internally, as well as participate in markets to buy and sell carbon credits. To accomplish this, they must find ways to ensure year over year they can meet carbon accounting goals 1st, and position themselves to be a provider of carbon to the market they believe is coming, in partnership with their farmers.
-Farmer Jane provides produce to Acme ag. She would like to add carbon credit sales to her list of agricultural production outputs brought to market. In addition to Acme there are also several other marketplaces forming and Jane wants to be able to find the best possible price for her carbon with the least amount of work.
-A start up carbon project developer who provides monitoring services approaches her with an easy monitoring and verification approach and proposal for upfront payment in exchange for her carbon. She accepts because she needs the cash. This carbon market developer is working with a market exchange registry (Registry1) that is running as a smart contract in an Ethereum state channel.
-Acme ag partners with a second developer that is confident of their ability to sell the carbon credits at a higher price using a different exchange registry (Registry2), and a different and more rigorous verification threshold. Jane second guesses her decision and wants to transfer her carbon credit claim from Registry to Registry2.
-An upfront payment for the first credit issuance has been made, and the first round of carbon credits have already been issued.  Jane and Acme agree that it is worth buying the claim rights back.  They do so, and then transfer the claim rights associated with the farm to Registry2
-The transition of carbon from Registry1 to Registry2 requires running additional data collection and uses a different quantification algorithm that is considered by third parties to be more rigorous, with lower (and transparently quantified uncertainty.) 
-Registry2 is running on a cosmosSDK chain.
-Acme ag agrees to underwrite the cost of additional verification.
-Now that the claim rights have been transferred to registry2 due to it’s ability to better serve Jane and Acme, the verification process proceeds and a new vintage of credits are issues including the full audit trail of the registry change.  
-####User Needs
-Acme Ag demands that there be no conflicting carbon claims on the farm in question 
-Acme Ag demands ability to audit and hold seller, Farmer Jane, liable for double counting Farmer Jane requires access to multiple markets.
-Farmer Jane requires monitoring and verification costs to be shouldered by purchaser.
-Registryt1: Need to be paid back for the carbon they pre-purchased 
-Registry2 Needs to be able to represent the movement of that carbon to avoid double counting
-Registry2 needs to be able to incorporate the credit class (verification methodology, data schema, etc) into it’s registry system while maintaining full data integrity. 
-All registries need to be able to represent the provenance of the carbon in question (both geolocation and the fact it moves from a different registry), in a way that give privacy control to appropriate parties.
-Market2 Needs to be able to update the claim with the new methodology but maintain consistency in the time period and geolocation of the claim
-####Unique Challenges
-Carbon markets have four major accounting concerns:
-#####Additionality: 
-A proposed activity is additional if policy interventions are deemed to be causing the activity to take place, such that any change in carbon source, sinks and reservoirs is determined by assessing whether a proposed activity is distinct from its baseline.  A baseline is a prediction of the quantified amount of an input to or output from an activity resulting from the expected future behavior of the actors proposing, and affected by, a proposed activity in the absence of one or more policy interventions, holding all other factors constant (Greenhouse Gas Management Institute source in comments). Note that this definition of additionality is problematic in several ways and our opinion is that additionality simply refers to the rights a user has to make a claim.  
-#####Permanence: 
-“Will this carbon be sequestered, or stored, for an extended period of time into the future?” In living carbon claims permanence is variable dependent on conditions such as droughts (which force emissions) rainfall (which increases sequestration) that are beyond human control, as well as activities (land use practices) which are within human control. This creates complexity that must be resolved in determination of additionality, measurement of baseline, and/or validation and verification. In many cases carbon offset methodologies report carbon credit buffer pools to cover permanence issues from both human causes and natural caused reduction of carbon stocks. 
-#####Leakage: 
-“Does this change create a carbon emission increase somewhere else”. For instance does forest conservation in one place cause a forest somewhere else to be cut down? Ability to link credit claims to a larger system of carbon accounting (transport, etc) are important. Ability for counter claims are important. For instance, if it becomes clear that a particular practice is sequestering carbon in one place, while causing emissions in another (for instance a forest is planted on farm land which causes another forest to be clear cut, burned and turned into forest), the NET carbon emissions must be considered in the claims process.  
-#####Uncertainty: 
-“How sure are we about the monitoring and quantification methodology that is under the hood of the carbon credit in question”. There is always some uncertainty as this is a probabilistic science, especially with living carbon credits. Metadata associated with the evidence backing a credit, the specific threshold of “verification consensus”, and clear statements of uncertainty are required. 
-#####Temporal challenges:
-Conflicting claims in living carbon markets have more to do temporal boundary than with cross-registration. If carbon is fungible, this means that any loss in the permanence period would make it impossible to determine which credit or registry bears the burden of any reversal event.  Reversal and impermanence pools are linked to credit classes and credit vintage issuance, so this would also need to move across registry systems.  In essence you have to be able to move over a whole credit class and or issuance not just a single credit, because the carbon credit logic is complex.
+#### User Story One: Credit issuance and transfer.  
 
+*Interchain Credit Transfer*
+
+- Acme Ag and their community of farmers, processors, and logistics providers, would like to meet the ambitious goals of carbon neutrality by 2030.  Beyond that coal, there is also interest in exploring if providing carbon credits to industries that cannot hope to achieve carbon negative operations (such as the energy sector), could become a long term profit center.
+- Acme ag wants to be able to have accurate carbon reporting internally, as well as participate in markets to buy and sell carbon credits. To accomplish this, they must find ways to ensure year over year they can meet carbon accounting goals 1st, and position themselves to be a provider of carbon to the market they believe is coming, in partnership with their farmers.
+- Farmer Jane provides produce to Acme ag. She would like to add carbon credit sales to her list of agricultural production outputs brought to market. In addition to Acme there are also several other marketplaces forming and Jane wants to be able to find the best possible price for her carbon with the least amount of work.
+- A start up carbon project developer who provides monitoring services approaches her with an easy monitoring and verification approach and proposal for upfront payment in exchange for her carbon. She accepts because she needs the cash. This carbon market developer is working with a market exchange registry (Registry1) that is running as a smart contract in an Ethereum state channel.
+- Acme ag partners with a second developer that is confident of their ability to sell the carbon credits at a higher price using a different exchange registry (Registry2), and a different and more rigorous verification threshold. Jane second guesses her decision and wants to transfer her carbon credit claim from Registry to Registry2.
+- An upfront payment for the first credit issuance has been made, and the first round of carbon credits have already been issued.  Jane and Acme agree that it is worth buying the claim rights back.  They do so, and then transfer the claim rights associated with the farm to Registry2
+- The transition of carbon from Registry1 to Registry2 requires running additional data collection and uses a different quantification algorithm that is considered by third parties to be more rigorous, with lower (and transparently quantified uncertainty.) 
+- Registry2 is running on a cosmosSDK chain.
+- Acme ag agrees to underwrite the cost of additional verification.
+- Now that the claim rights have been transferred to registry2 due to it’s ability to better serve Jane and Acme, the verification process proceeds and a new vintage of credits are issues including the full audit trail of the registry change.
+
+#### User Needs
+
+- Acme Ag demands that there be no conflicting carbon claims on the farm in question 
+- Acme Ag demands ability to audit and hold seller, Farmer Jane, liable for double counting Farmer Jane requires access to multiple markets.
+- Farmer Jane requires monitoring and verification costs to be shouldered by purchaser.
+- Registryt1: Need to be paid back for the carbon they pre-purchased 
+- Registry2 Needs to be able to represent the movement of that carbon to avoid double counting
+- Registry2 needs to be able to incorporate the credit class (verification methodology, data schema, etc) into it’s registry system while maintaining full data integrity.
+- All registries need to be able to represent the provenance of the carbon in question (both geolocation and the fact it moves from a different registry), in a way that give privacy control to appropriate parties.
+- Market2 Needs to be able to update the claim with the new methodology but maintain consistency in the time period and geolocation of the claim
+
+#### Unique Challenges
+
+Carbon markets have four major accounting concerns:
+
+##### Additionality: 
+
+A proposed activity is additional if policy interventions are deemed to be causing the activity to take place, such that any change in carbon source, sinks and reservoirs is determined by assessing whether a proposed activity is distinct from its baseline.  A baseline is a prediction of the quantified amount of an input to or output from an activity resulting from the expected future behavior of the actors proposing, and affected by, a proposed activity in the absence of one or more policy interventions, holding all other factors constant (Greenhouse Gas Management Institute source in comments). Note that this definition of additionality is problematic in several ways and our opinion is that additionality simply refers to the rights a user has to make a claim.  
+
+##### Permanence: 
+
+“Will this carbon be sequestered, or stored, for an extended period of time into the future?” In living carbon claims permanence is variable dependent on conditions such as droughts (which force emissions) rainfall (which increases sequestration) that are beyond human control, as well as activities (land use practices) which are within human control. This creates complexity that must be resolved in determination of additionality, measurement of baseline, and/or validation and verification. In many cases carbon offset methodologies report carbon credit buffer pools to cover permanence issues from both human causes and natural caused reduction of carbon stocks. 
+
+##### Leakage: 
+
+“Does this change create a carbon emission increase somewhere else”. For instance does forest conservation in one place cause a forest somewhere else to be cut down? Ability to link credit claims to a larger system of carbon accounting (transport, etc) are important. Ability for counter claims are important. For instance, if it becomes clear that a particular practice is sequestering carbon in one place, while causing emissions in another (for instance a forest is planted on farm land which causes another forest to be clear cut, burned and turned into forest), the NET carbon emissions must be considered in the claims process.  
+
+##### Uncertainty: 
+
+“How sure are we about the monitoring and quantification methodology that is under the hood of the carbon credit in question”. There is always some uncertainty as this is a probabilistic science, especially with living carbon credits. Metadata associated with the evidence backing a credit, the specific threshold of “verification consensus”, and clear statements of uncertainty are required. 
+
+##### Temporal challenges:
+
+Conflicting claims in living carbon markets have more to do temporal boundary than with cross-registration. If carbon is fungible, this means that any loss in the permanence period would make it impossible to determine which credit or registry bears the burden of any reversal event.  Reversal and impermanence pools are linked to credit classes and credit vintage issuance, so this would also need to move across registry systems.  In essence you have to be able to move over a whole credit class and or issuance not just a single credit, because the carbon credit logic is complex.
 
 ### 4.2 Financing commodity trade deals
 
